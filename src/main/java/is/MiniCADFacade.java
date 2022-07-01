@@ -5,11 +5,9 @@ import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.util.Scanner;
 
-import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
-import javax.swing.JToolBar;
 
 import is.minicad.command.HistoryCommandHandler;
 import is.minicad.editor.EditorIF;
@@ -29,13 +27,10 @@ public class MiniCADFacade {
 	private int y = -1;
 
 	public MiniCADFacade(int x, int y){
+		this();
 		this.x = x;
 		this.y = y;
-		this.handler = new HistoryCommandHandler();
-		this.gpanel = new GraphicObjectPanel();
-		this.istruzione = new IstruzioneIm();
-		this.editor = new EditorImpl(handler,gpanel);
-		this.istruzione.setEditor(this.editor,this.handler);
+
 	}
 	public MiniCADFacade(){
 		this.handler = new HistoryCommandHandler();

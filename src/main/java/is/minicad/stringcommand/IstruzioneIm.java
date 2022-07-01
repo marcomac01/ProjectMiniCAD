@@ -110,6 +110,7 @@ public class IstruzioneIm implements IstruzioneIF {
                 case "redo":
                     handler.handle(HistoryCommandHandler.NonExecutableCommands.REDO);
                     break;
+                default: throw new StringCommandException("Comando non valido");
             }
         }
     }

@@ -2,11 +2,9 @@ package is.minicad.shapes.specificcommand;
 
 import is.minicad.command.Command;
 import is.minicad.editor.EditorIF;
-import is.minicad.editor.EditorImpl;
 import is.minicad.shapes.model.GraphicObject;
 import is.minicad.shapes.view.GraphicObjectPanel;
-import java.awt.geom.Point2D;
-import java.util.ArrayList;
+
 
 public class NewObjectCmd implements Command {
 	private GraphicObjectPanel panel;
