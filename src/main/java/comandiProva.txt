@@ -1,7 +1,10 @@
 create img ("/duke1.png") (200,200)
 create img ("/duke2.png") (20,20)
 create Rectangle (200.1,100.3) (40,40)
+create Circle (10.0) (30,30)
+
 grp id0 id1
 ungrp g0
 mv g0 (200,300)
+mvoff id0 (10,10)
 del g0

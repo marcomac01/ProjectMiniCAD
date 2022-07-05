@@ -71,7 +71,7 @@ public class IstruzioneIm implements IstruzioneIF {
                     else {throw new IllegalArgumentException();} break;
                 case "ls":
                     token = st.nextToken();
-                    if(token.equals("Circle")|token.equals("Rectangle")|token.equals("img")) editor.print(token);
+                    if(token.equals("Circle")|token.equals("Rectangle")|token.equals("Image")) editor.print(token);
                     else if(token.contains("id")) editor.print(parseInt(token.substring(2,token.length())), false);
                     else if(token.contains("g")) editor.print(parseInt(token.substring(1,token.length())), true);
                     else if(token.equals("groups")) editor.printGroups();
@@ -79,17 +79,17 @@ public class IstruzioneIm implements IstruzioneIF {
                     break;
                 case "area":
                     token = st.nextToken();
-                    if(token.equals("Circle")|token.equals("Rectangle")|token.equals("img")) System.out.println(editor.getArea(token));
-                    else if(token.contains("id")) editor.getArea(parseInt(token.substring(2,token.length())), false);
-                    else if(token.contains("g")) editor.getArea(parseInt(token.substring(1,token.length())), true);
-                    else if(token.equals("all")) editor.getArea();
+                    if(token.equals("Circle")|token.equals("Rectangle")|token.equals("Image")) System.out.println(editor.getArea(token));
+                    else if(token.contains("id")) System.out.println(editor.getArea(parseInt(token.substring(2,token.length())), false));
+                    else if(token.contains("g")) System.out.println(editor.getArea(parseInt(token.substring(1,token.length())), true));
+                    else if(token.equals("all")) System.out.println(editor.getArea());
                     break;
                 case "perimeter":
-                    supporto = st.nextToken();
-                    if(token.equals("Circle")|token.equals("Rectangle")|token.equals("img")) editor.getArea(token);
-                    else if(token.contains("id")) editor.getPerimeter(parseInt(supporto.substring(2,supporto.length())), false);
-                    else if(token.contains("g")) editor.getPerimeter(parseInt(supporto.substring(1,supporto.length())), true);
-                    else if(token.equals("all")) editor.getPerimeter();
+                    token = st.nextToken();
+                    if(token.equals("Circle")|token.equals("Rectangle")|token.equals("Image")) System.out.println(editor.getPerimeter(token));
+                    else if(token.contains("id")) System.out.println(editor.getPerimeter(parseInt(token.substring(2,token.length())), false));
+                    else if(token.contains("g")) System.out.println(editor.getPerimeter(parseInt(token.substring(1,token.length())), true));
+                    else if(token.equals("all")) System.out.println(editor.getPerimeter());
                     break;
                 case "grp":
                     ArrayList<Integer> ids = new ArrayList();
