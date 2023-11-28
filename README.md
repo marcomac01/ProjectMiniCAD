@@ -1,7 +1,7 @@
 # Progetto MiniCAD
 
 Repository contenete progetto e relazione del progetto MiniCAD.
-Anno di frequenza al corso 2121-2022. Relazione presente in master directory.
+Anno di frequenza al corso 2021-2022. Relazione presente in master directory.
 
 ## Descrizione
 
